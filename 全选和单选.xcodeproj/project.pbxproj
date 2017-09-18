@@ -15,6 +15,9 @@
 		B925D56F1F6F69B200A3948A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B925D56D1F6F69B200A3948A /* LaunchScreen.storyboard */; };
 		B925D57A1F6F69B200A3948A /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B925D5791F6F69B200A3948A /* _____Tests.m */; };
 		B925D5851F6F69B200A3948A /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B925D5841F6F69B200A3948A /* _____UITests.m */; };
+		B925D5971F6F6A7000A3948A /* UILabel+MyLable.m in Sources */ = {isa = PBXBuildFile; fileRef = B925D5961F6F6A7000A3948A /* UILabel+MyLable.m */; };
+		B925D59A1F6F6A8F00A3948A /* HggProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = B925D5991F6F6A8F00A3948A /* HggProduct.m */; };
+		B925D59D1F6F6ACE00A3948A /* HggProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B925D59C1F6F6ACE00A3948A /* HggProductTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		B925D5801F6F69B200A3948A /* 全选和单选UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "全选和单选UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B925D5841F6F69B200A3948A /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		B925D5861F6F69B200A3948A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B925D5951F6F6A6900A3948A /* UILabel+MyLable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+MyLable.h"; sourceTree = "<group>"; };
+		B925D5961F6F6A7000A3948A /* UILabel+MyLable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+MyLable.m"; sourceTree = "<group>"; };
+		B925D5981F6F6A8F00A3948A /* HggProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HggProduct.h; sourceTree = "<group>"; };
+		B925D5991F6F6A8F00A3948A /* HggProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HggProduct.m; sourceTree = "<group>"; };
+		B925D59B1F6F6ACE00A3948A /* HggProductTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HggProductTableViewCell.h; sourceTree = "<group>"; };
+		B925D59C1F6F6ACE00A3948A /* HggProductTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HggProductTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,9 @@
 		B925D55E1F6F69B200A3948A /* 全选和单选 */ = {
 			isa = PBXGroup;
 			children = (
+				B925D5941F6F6A5F00A3948A /* view */,
+				B925D5931F6F6A5300A3948A /* Model */,
+				B925D5921F6F6A4D00A3948A /* cell */,
 				B925D5621F6F69B200A3948A /* AppDelegate.h */,
 				B925D5631F6F69B200A3948A /* AppDelegate.m */,
 				B925D5651F6F69B200A3948A /* ViewController.h */,
@@ -138,6 +150,33 @@
 				B925D5861F6F69B200A3948A /* Info.plist */,
 			);
 			path = "全选和单选UITests";
+			sourceTree = "<group>";
+		};
+		B925D5921F6F6A4D00A3948A /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				B925D59B1F6F6ACE00A3948A /* HggProductTableViewCell.h */,
+				B925D59C1F6F6ACE00A3948A /* HggProductTableViewCell.m */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		B925D5931F6F6A5300A3948A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B925D5981F6F6A8F00A3948A /* HggProduct.h */,
+				B925D5991F6F6A8F00A3948A /* HggProduct.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B925D5941F6F6A5F00A3948A /* view */ = {
+			isa = PBXGroup;
+			children = (
+				B925D5951F6F6A6900A3948A /* UILabel+MyLable.h */,
+				B925D5961F6F6A7000A3948A /* UILabel+MyLable.m */,
+			);
+			name = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,9 +312,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B925D59A1F6F6A8F00A3948A /* HggProduct.m in Sources */,
 				B925D5671F6F69B200A3948A /* ViewController.m in Sources */,
+				B925D59D1F6F6ACE00A3948A /* HggProductTableViewCell.m in Sources */,
 				B925D5641F6F69B200A3948A /* AppDelegate.m in Sources */,
 				B925D5611F6F69B200A3948A /* main.m in Sources */,
+				B925D5971F6F6A7000A3948A /* UILabel+MyLable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
